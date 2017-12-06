@@ -5,4 +5,6 @@ COPY . .
 
 RUN cargo install
 
-CMD ["guestbook"]
+EXPOSE 6767/tcp
+
+CMD ["guestbook-app"]
