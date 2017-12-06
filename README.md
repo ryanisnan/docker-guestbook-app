@@ -16,3 +16,12 @@
 ### Test the Build
 
     curl http://localhost:6767
+
+
+### Building the docker image
+
+    docker build -t guestbook-app .
+
+### Run the docker image
+
+    docker run --rm -p 6767:6767 guestbook-app:latest
