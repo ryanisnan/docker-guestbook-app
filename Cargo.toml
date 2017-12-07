@@ -1,7 +1,0 @@
-[package]
-name = "guestbook-app"
-version = "0.0.1"
-authors = ["ryanisnan@gmail.com"]
-
-[dependencies.nickel]
-version = "*"

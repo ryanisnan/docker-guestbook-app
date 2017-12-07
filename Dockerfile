@@ -1,10 +1,10 @@
-FROM rust:1.22
+FROM python:3.6.3
 
 WORKDIR /usr/src/guestbook
+COPY requirements.txt ./
+
+RUN pip install --no-cache-dir -r requirements.txt
+
 COPY . .
 
-RUN cargo install
-
-EXPOSE 6767/tcp
-
-CMD ["guestbook-app"]
+CMD ["python", "./manage.py", "runserver"]
