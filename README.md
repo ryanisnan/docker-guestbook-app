@@ -7,6 +7,11 @@
     git clone git@github.com:ryanisnan/docker-guestbook-app.git
     cd docker-guestbook-app
 
+### Install the reqs ###
+    virtualenv venv --python=/usr/bin/python3
+    source venv/bin/activate
+    pip install -r requirements.txt
+
 ### Test the Build
 
     python manage.py runserver
@@ -17,4 +22,4 @@
 
 ### Run the docker image
 
-    docker run --rm -p 6767:6767 guestbook-app:latest
+    docker run --rm -p 8000:8000 guestbook-app:latest
